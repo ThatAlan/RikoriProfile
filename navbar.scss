@@ -1,0 +1,35 @@
+nav {
+  left: 94%;
+  vertical-align: middle;
+  float: left;
+  writing-mode: tb-rl; /*IE*/
+  writing-mode: vertical-lr; /* OPera/webkit*/
+  writing-mode: sideways-lr; /* should be the one */
+  position: absolute;
+}
+li {
+  display: inline-block;
+  padding-top: 30px;
+}
+
+a {
+  transition: 500ms;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a.active {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: black;
+  background: rgb(255, 255, 255);
+  text-decoration: none;
+}

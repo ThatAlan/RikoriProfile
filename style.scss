@@ -1,0 +1,47 @@
+@import url("./navbar.scss");
+
+#typewriter {
+  font-size: 340px;
+  line-height: 260px;
+  overflow-wrap: anywhere;
+  margin: 0%;
+  font-family: "Montserrat";
+  font-weight: 900;
+  color: #ffff;
+}
+
+.bg-text {
+  margin-right: 51rem;
+  opacity: 15%;
+}
+
+#container_2 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+body,
+html,
+main {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  position: absolute;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: rgb(114, 9, 183);
+  background: linear-gradient(
+    337deg,
+    rgba(114, 9, 183, 1) 0%,
+    rgba(247, 37, 133, 1) 100%
+  );
+}
+
+.container {
+  color: white;
+}
