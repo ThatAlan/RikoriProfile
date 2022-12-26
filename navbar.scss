@@ -17,7 +17,7 @@
   }
 }
 
-nav {
+.nav-bar {
   animation: 1s ease-out 0s 1 slideInFromLeft;
   left: 94%;
   vertical-align: middle;
@@ -27,29 +27,30 @@ nav {
   writing-mode: sideways-lr; /* should be the one */
   position: absolute;
 }
+
 li {
   animation: 1s ease-out 0s 1 schloompLoad;
   display: inline-block;
   padding-top: 30px;
 }
 
-a {
+.nav-item {
   transition: 500ms;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-family: "Montserrat";
+  font-family: Consolas,monaco,monospace;
   font-weight: 100;
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-a.active {
+.nav-item.active {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
 }
 
-a:hover {
+.nav-item:hover {
   color: black;
   background: rgb(255, 255, 255);
   text-decoration: none;

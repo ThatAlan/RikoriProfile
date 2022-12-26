@@ -1,10 +1,7 @@
 import './style.scss'
 import './bg/stars.scss'
-import Parallax from 'parallax-js'
 import { generateStars } from './bg/stars'
 
-var scene = document.querySelector("#app")
-var para = new Parallax(scene)
 
 new Typewriter("#typewriter", {
   strings: ["PROGRAMMER", "ARTIST", "PHOTOGRAPHER"],
