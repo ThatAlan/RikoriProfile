@@ -1,26 +1,18 @@
 @import url("./navbar.scss");
 // TODO: PLEASE FOR THE LOVE OF GOD, REFACTOR THIS GOD AWFUL CODE TO USE GRIDS.
 #typewriter {
+  padding-top: 40px;
   font-size: 340px;
   line-height: 260px;
+  top: 0%;
   overflow-wrap: anywhere;
   margin: 0%;
-  font-family: "Montserrat";
   font-weight: 900;
   color: #ffff;
-}
-
-.bg-text {
+  position: absolute;
   margin-right: 51rem;
   opacity: 15%;
-}
-
-#container_2 {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  padding-left: 20px;
 }
 
 body,
@@ -30,18 +22,127 @@ main {
   width: 100%;
   margin: 0px;
   position: absolute;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background: rgb(114, 9, 183);
-  background: linear-gradient(
-    337deg,
-    rgba(114, 9, 183, 1) 0%,
-    rgba(247, 37, 133, 1) 100%
-  );
+  background: url("./bg.png") repeat-x;
 }
 
 .container {
   color: white;
+}
+
+.logo {
+  width: 5%;
+  height: auto;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+ion-icon {
+  font-size: 40px;
+  color: white;
+  padding-left: 5px;
+}
+
+.socials {
+  left: 80%;
+  position: absolute;
+  padding-top: 40px;
+}
+
+.social-icon {
+  transition: 500ms;
+  color: white;
+}
+
+.social-icon:hover {
+  color: rgba(255, 255, 255, 0.425);
+  text-decoration: none;
+}
+
+.main-txt {
+  font-size: 128px;
+  line-height: 86%;
+  overflow-wrap: break-word;
+  margin: 0%;
+  font-weight: 900;
+  color: #ffff;
+  left: 60%;
+  top: 10%;
+  margin-right: 33rem;
+  position: absolute;
+}
+
+.main-img {
+  height: 700px;
+  width: auto;
+  position: absolute;
+  top: 0%;
+  left: 31%;
+}
+
+.main-quote {
+  position: absolute;
+  top: 47%;
+  left: 60.5%;
+  margin-right: 23rem;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+  color: white;
+}
+
+.desc-txt {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    left: 5%;
+    top: 60%;
+    font-size: 29px;
+    line-height: 29px;
+    margin-bottom: 5rem;
+    vertical-align: middle;
+    float: left;
+    writing-mode: tb-rl; /*IE*/
+    writing-mode: vertical-rl; /* OPera/webkit*/
+    writing-mode: sideways-rl; /* should be the one */
+    position: absolute;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.about-me {
+  position: absolute;
+  top: 74%;
+  left: 40%;
+  margin-right: 23rem;
+  font-size: 40px;
+  line-height: 86%;
+  font-weight: bold;
+}
+
+.ml-dude {
+  position: absolute;
+  top: 74%;
+  left: 60.5%;
+  margin-right: 23rem;
+  font-size: 40px;
+  line-height: 86%;
+  font-weight: bold;
+}
+
+.child {
+  top: 80%;
+  margin-right: 30rem;
+  font-size: 16px;
+  line-height: 86%;
+  font-weight: 300;
+  line-height: 17px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about-me.child {
+  margin-right: 55rem;
 }

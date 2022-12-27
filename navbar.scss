@@ -1,4 +1,24 @@
-nav {
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes schloompLoad {
+  0% {
+    padding-top: 0;
+  }
+
+  100% {
+    padding-top: 30px;
+  }
+}
+
+.nav-bar {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
   left: 94%;
   vertical-align: middle;
   float: left;
@@ -7,28 +27,30 @@ nav {
   writing-mode: sideways-lr; /* should be the one */
   position: absolute;
 }
+
 li {
+  animation: 1s ease-out 0s 1 schloompLoad;
   display: inline-block;
   padding-top: 30px;
 }
 
-a {
+.nav-item {
   transition: 500ms;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-family: "Montserrat";
+  font-family: Consolas,monaco,monospace;
   font-weight: 100;
-  font-size: 25px;
+  font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-a.active {
+.nav-item.active {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
 }
 
-a:hover {
+.nav-item:hover {
   color: black;
   background: rgb(255, 255, 255);
   text-decoration: none;
