@@ -146,3 +146,16 @@ ion-icon {
 .about-me.child {
   margin-right: 55rem;
 }
+
+.skill-xp {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  left: 5%;
+  top: 60%;
+  font-size: 29px;
+  line-height: 29px;
+  margin-bottom: 5rem;
+  vertical-align: middle;
+  position: absolute;
+  font-weight: 500;
+  color: white;
+}
